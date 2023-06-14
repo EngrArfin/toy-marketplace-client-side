@@ -1,40 +1,49 @@
-import React, { useContext } from 'react';
+import React  from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
+import { Result } from 'postcss';
 
-const Login = () => {
+const Register = () => {
 
-    const {signIn} = useContext(AuthContext);
-    
-    const handleLogin = event => {
+    const {user, createUser}  = useContext(AuthContext);
+
+
+    const handleRegister = event => {
         event.preventDefault();
-        
+
         const form = event.target;
+        const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        console.log(name, email, password);
 
-        //password error or correct identification and validation link up hi dear.
-        signIn(email, password)
-        .then(result =>{
+        createUser(email, password)
+        .then(result => {
             const loggedUser = result.user;
             console.log(loggedUser);
-            form .reset();
+            form.reset();
         })
-        .catch(error =>{
-            console.log(error);
+        
+        .catch(error => {
+            console.log(error)
         })
     }
-
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
-                 <div className="hero-content flex-col ">
+                 <div className="hero-content flex-col lg-10">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Please Login !</h1>
+                        <h1 className="text-5xl font-bold">Please Register !</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form onSubmit={handleLogin} className="card-body ">
+                        <form onSubmit={handleRegister} className="card-body">
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Full Name</span>
+                                </label>
+                                <input type="text" name='name' placeholder="Type Name" className="input input-bordered" required />
+                            </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -45,21 +54,17 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" name='password' placeholder="Enter password" className="input input-bordered" required />
+                                <input type="password" name='password' placeholder="Enter password" className="input input-bordered" required /> 
                                 <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                                    <Link to="/login" className="label-text-alt link link-hover">Already have an account?</Link>
+                                </label>              
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
-                               
+                                <button className="btn btn-primary">Register</button>
+
                             </div>
                         </form>
-                        <p className='mb-4 ml-8'>
-                            <Link to="/register" className="level-text-alt link-hover">
-                                New Client? Please Register
-                            </Link>     
-                        </p>                       
+                        
                     </div>
                 </div>
             </div>
@@ -67,4 +72,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;

@@ -1,11 +1,26 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../../Providers/AuthProviders';
+/* import React from 'react';
+
+const Profile = () => {
+    return (
+        <div>
+            <h3>Your User Profile</h3>
+        </div>
+    );
+};
+
+export default Profile; */
+
+
+
+
+import React, { useContext } from 'react'
+import { AuthContext } from '../../Providers/AuthProviders'
 
 const Home = () => {
-    const user = useContext(AuthContext);
-    console.log(user)
-    return (
-      <div>
+  const user = useContext(AuthContext)
+  console.log(user)
+  return (
+    <div>
       <h2> {user && <span>{user.displayName}</span>}</h2>
       <div>
          <div>
@@ -19,15 +34,28 @@ const Home = () => {
                 <h1 className="text-5xl font-bold">Chef Recipe</h1>
                 <p className="py-6">
                   {' '}
-                  Chef Recipe Food Restaurant is an exquisite culinary destination  that brings together<br /> the finest flavors innovative techniques,  and a passion for creating <br />exceptional dining experiences.  Located in a vibrant and bustling neighborhood, <br /> this restaurant is a haven for food enthusiasts seeking an 
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.{' '}
+                  <br />
+                  Modi officiis dolorum, nihil iure re <br />
+                  obcaecati inventore harum , magnam et
+                  ipsam error. <br /> .
                 </p>
-                <button className="btn btn-primary">Go forRecipe</button>
+                <button className="btn btn-primary">Submit Recipe</button>
               </div>
             </div>
           </div>
         </div> 
 
- 
+ {/* <div className="hero min-h-screen" style="background-image: url(/public/chef11.jpg);">
+  <div className="hero-overlay bg-opacity-60"></div>
+  <div className="hero-content text-center text-neutral-content">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button className="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>  */}
 
 
         {/* Food Recipe */}
@@ -245,6 +273,6 @@ const Home = () => {
         </div>
       </div>
     </div>
-    );
-};
-export default Home;
+  )
+}
+export default Home
