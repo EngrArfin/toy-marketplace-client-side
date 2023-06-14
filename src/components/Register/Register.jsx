@@ -31,7 +31,7 @@ const Register = () => {
     }
     return (
         <div>
-            <div className="hero min-h-screen bg-base-200">
+            <div className=" bg-primary hero min-h-screen bg-base-200">
                  <div className="hero-content flex-col lg-10">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Please Register !</h1>
@@ -40,7 +40,7 @@ const Register = () => {
                         <form onSubmit={handleRegister} className="card-body">
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Full Name</span>
+                                    <span className="label-text"> Name</span>
                                 </label>
                                 <input type="text" name='name' placeholder="Type Name" className="input input-bordered" required />
                             </div>
@@ -48,7 +48,7 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" name='email' placeholder="Enter email" className="input input-bordered" required />
+                                <input type="email" name='email' placeholder="Email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -56,10 +56,10 @@ const Register = () => {
                                 </label>
                                 <input type="password" name='password' placeholder="Enter password" className="input input-bordered" required /> 
                                 <label className="label">
-                                    <Link to="/login" className="label-text-alt link link-hover">Already have an account?</Link>
+                                    <Link to="/login" className="label-text-alt link link-hover">I have an account?</Link>
                                 </label>              
                             </div>
-                            <div className="form-control mt-6">
+                            <div className="form-control mt-7">
                                 <button className="btn btn-primary">Register</button>
 
                             </div>

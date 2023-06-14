@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -16,14 +15,13 @@ import AuthProviders from './Providers/AuthProviders.jsx';
 import Orders from './components/Orders/Orders.jsx';
 import PrivateRoute from './routes/PrivateRoute.jsx';
 import Profile from './components/Profile/Profile.jsx';
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
     children:[
       {
-        path: '/',
+        path: '/home',
         element:<Home></Home>,
       },
       {
