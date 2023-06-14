@@ -38,13 +38,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Dol Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>If u want to buy product?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -54,13 +54,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check </div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -70,13 +70,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -86,13 +86,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -107,13 +107,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Dol Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>If u want to buy product?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -123,13 +123,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check </div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -139,13 +139,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -155,13 +155,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -174,13 +174,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Dol Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>If u want to buy product?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -190,13 +190,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check </div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -206,13 +206,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -222,13 +222,13 @@ const Home = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Shoes!
+                  Toy Product
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Fashion</div>
-                  <div className="badge badge-outline">Products</div>
+                  <div className="badge badge-outline">Check</div>
+                  <div className="badge badge-outline">Buy</div>
                 </div>
               </div>
             </div>
@@ -236,7 +236,7 @@ const Home = () => {
         </div>
 
         {/* Watch */}
-        <dir className="col-end-1" >
+        <dir className="col-end-1">
           <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
               <span className="countdown font-mono text-5xl">
@@ -267,14 +267,11 @@ const Home = () => {
 
         {/* Involver For Delevery */}
 
-        <div >
+        <div>
           <div className="flex m-5 p-4">
             <div className="card w-96 bg-base-100 shadow-xl image-full m-4">
               <figure>
-                <img
-                  src="/public/daraz.jpg"
-                  alt="Shoes"
-                />
+                <img src="/public/daraz.jpg" alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Kid Toy</h2>
@@ -286,10 +283,7 @@ const Home = () => {
             </div>
             <div className="card w-96 bg-base-100 shadow-xl image-full m-4">
               <figure>
-                <img
-                  src="/public/c-1.jpg"
-                  alt="Shoes"
-                />
+                <img src="/public/c-1.jpg" alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
@@ -301,10 +295,7 @@ const Home = () => {
             </div>
             <div className="card w-96 bg-base-100 shadow-xl image-full m-4">
               <figure>
-                <img
-                  src="/public/c-2.jpg"
-                  alt="Shoes"
-                />
+                <img src="/public/c-2.jpg" alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
@@ -316,10 +307,7 @@ const Home = () => {
             </div>
             <div className="card w-96 bg-base-100 shadow-xl image-full m-4">
               <figure>
-                <img
-                  src="/public/c-3.jpg"
-                  alt="Shoes"
-                />
+                <img src="/public/c-3.jpg" alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>
@@ -330,7 +318,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          
         </div>
 
         {/* Footer Here */}
