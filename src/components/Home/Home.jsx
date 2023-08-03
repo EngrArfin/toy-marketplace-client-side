@@ -166,6 +166,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           {/* div-3 */}
           <div className="flex p-4 ">
             <div className="card w-96 bg-base-100 shadow-xl p-6 m-4">

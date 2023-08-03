@@ -1,13 +1,6 @@
-//import React from 'react';
-
 import React, { useState } from 'react';
 
-
-
-
 const Contract = () => {
-
-    
 
     return (
         <div>
