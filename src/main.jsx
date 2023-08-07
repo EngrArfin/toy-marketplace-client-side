@@ -15,6 +15,9 @@ import AuthProviders from './Providers/AuthProviders.jsx';
 import Orders from './components/Orders/Orders.jsx';
 import PrivateRoute from './routes/PrivateRoute.jsx';
 import Profile from './components/Profile/Profile.jsx';
+import CheckOut from './components/CheckOut/CheckOut';
+import Services from './components/Services/Services';
+import ServiceCard from './components/Services/ServiceCard';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,6 +51,14 @@ const router = createBrowserRouter([
         path: '/orders',
         element: <PrivateRoute><Orders></Orders></PrivateRoute>
       },
+      {
+        path: 'checkout/:id',
+        element: <CheckOut></CheckOut>
+      },
+      {
+        path: '/produc',
+        element: <ServiceCard></ServiceCard>
+      }
       
     ]
   },

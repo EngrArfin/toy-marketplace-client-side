@@ -12,6 +12,7 @@ const Header = () => {
 
   return (
     <div className="flex">
+
       <div className="navbar bg-base-100">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl m-2">Kid Dol Toy</a>
@@ -24,6 +25,13 @@ const Header = () => {
           <Link className="btn btn-danger normal-case text-xl m-2" to="/orders">
             Kid product 
           </Link>
+          <Link className="btn btn-danger normal-case text-xl m-2" to="checkout/:id">
+            Check Out
+          </Link>
+          <Link className="btn btn-danger normal-case text-xl m-2" to="/produc">
+            Contract
+          </Link>
+          
           <Link className="btn btn-danger normal-case text-xl m-2" to="/contract">
             Contract
           </Link>
