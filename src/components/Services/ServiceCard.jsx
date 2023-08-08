@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
@@ -13,11 +12,18 @@ const ServiceCard = ({ service }) => {
         <p className="text-xl text-orange-500">Price: ${price}</p>
         <div className="card-action">
           <Link to={`/checkout/${_id}`}>
-            <button className="btn btn-primary">Buy Now </button>
+            <button className="badge badge-outline">Product Details </button>
+            <div className="card-actions justify-end">
+                  <div className="btn btn-danger">Buy Here</div>
+            </div>
           </Link>
         </div>
       </div>
     </div>
+
+
+
+
   );
 };
 

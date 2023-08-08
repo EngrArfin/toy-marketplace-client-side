@@ -1,0 +1,74 @@
+[
+      {
+        "_id": "product_id_1",
+        "service_id": "service_id_1",
+        "title": "Child Product 1",
+        "img": "https://i.ibb.co/sJkq8Hf/d-2.jpg",
+        "price": 29.99,
+        "description": "This is the description for Child Product 1."
+      },
+      {
+        "_id": "product_id_2",
+        "service_id": "service_id_2",
+        "title": "Child Product 2",
+        "img": "https://i.ibb.co/CHB6JsQ/d-3.jpg",
+        "price": 19.99,
+        "description": "This is the description for Child Product 2."
+      },
+      {
+        "_id": "product_id_3",
+        "service_id": "service_id_3",
+        "title": "Child Product 3",
+        "img": "https://i.ibb.co/DMr0tGV/d-4.jpg",
+        "price": 49.99,
+        "description": "This is the description for Child Product 3."
+      },
+      {
+        "_id": "product_id_4",
+        "service_id": "service_id_4",
+        "title": "Child Product 4",
+        "img": "https://i.ibb.co/MN41xvQ/d-5.jpg",
+        "price": 30.59,
+        "description": "This is the description for Child Product 3."
+      },
+      {
+        "_id": "product_id_5",
+        "service_id": "service_id_5",
+        "title": "Child Product 5",
+        "img": "https://i.ibb.co/DMckNpw/d-1.jpg",
+        "price": 59.99,
+        "description": "This is the description for Child Product 3."
+      },
+      {
+        "_id": "product_id_6",
+        "service_id": "service_id_6",
+        "title": "Child Product 6",
+        "img": "https://i.ibb.co/GQ1CM9p/d-6.jpg",
+        "price": 69.99,
+        "description": "This is the description for Child Product 3."
+      },
+      {
+        "_id": "product_id_7",
+        "service_id": "service_id_7",
+        "title": "Child Product 7",
+        "img": "https://i.ibb.co/6shNZFC/d-7.jpg",
+        "price": 37.99,
+        "description": "This is the description for Child Product 3."
+      },
+      {
+        "_id": "product_id_8",
+        "service_id": "service_id_8",
+        "title": "Child Product 8",
+        "img": "https://i.ibb.co/PxGMnqw/d-8.jpg",
+        "price": 89.99,
+        "description": "This is the description for Child Product 3."
+      },
+      {
+        "_id": "product_id_9",
+        "service_id": "service_id_9",
+        "title": "Child Product 9",
+        "img": "https://i.ibb.co/JBH4Ww9/d-9.jpg",
+        "price": 29.99,
+        "description": "This is the description for Child Product 3."
+      }
+]

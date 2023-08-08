@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProviders";
+import Services from "../Services/Services";
 
 const Home = () => {
   const user = useContext(AuthContext);
@@ -238,6 +239,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Services></Services>
 
         {/* Watch */}
         <dir className="col-end-1">
@@ -268,6 +270,8 @@ const Home = () => {
             </div>
           </div>
         </dir>
+
+        
 
         {/* Involver For Delevery */}
 
