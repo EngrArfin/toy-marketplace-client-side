@@ -1,12 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, Link } from "react";
 import { AuthContext } from "../../Providers/AuthProviders";
 import Services from "../Services/Services";
 
 const Home = () => {
+  
   const user = useContext(AuthContext);
   console.log(user);
-  
-
 
   return (
     <div>
@@ -15,234 +14,24 @@ const Home = () => {
         <div className="hero min-h-screen bg-base-200">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-5xl font-bold">Home Babi Toy</h1>
+              <h1 className="text-5xl font-bold">Home Beby Toy</h1>
               <p className="py-6">
-                Dragana Todorović, better known under the stage name Bebi Dol,
-                is a Serbian and Yugoslav singer and songwriter. Born in
-                Belgrade, she made her solo debut in 1981 with the single
-                "Mustafa". Bebi Dol rose to further prominence
+                Toy marketing relies on influencers and recommendations from
+                other kids. Use a friendly, approachable style on social media,
+                and encourage customers to share their experiences.
               </p>
               <button className="btn btn-primary">
-                {" "}
+                
                 <a href="/src/components/Orders/Orders.jsx"></a> Go For Buy
               </button>
             </div>
           </div>
         </div>
 
-        {/* Dol Product */}
-        <h2 className="btn-primary m-4 p-6">Doll Product For Sell</h2>
-
-        <div>
-          {/* div-1 */}
-          <div className="flex p-4 ">
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-4">
-              <figure>
-                <img src="/public/img/d-1.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Dol Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If u want to buy product?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-5.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check </div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-2.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-3.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* div-2 */}
-
-          <div className="flex p-4 ">
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-4">
-              <figure>
-                <img src="/public/img/d-1.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Dol Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If u want to buy product?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-5.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check </div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-2.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-3.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* div-3 */}
-          <div className="flex p-4 ">
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-4">
-              <figure>
-                <img src="/public/img/d-1.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Dol Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If u want to buy product?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-5.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check </div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-2.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-            <div className="card w-96 bg-base-100 shadow-xl p-6 m-2">
-              <figure>
-                <img src="/public/img/d-3.jpg" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  Toy Product
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Check</div>
-                  <div className="badge badge-outline">Buy</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <Services></Services>
 
         {/* Watch */}
-        <dir className="col-end-1">
+        <dir className="m-20 col-end-1">
           <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
               <span className="countdown font-mono text-5xl">
@@ -270,8 +59,6 @@ const Home = () => {
             </div>
           </div>
         </dir>
-
-        
 
         {/* Involver For Delevery */}
 

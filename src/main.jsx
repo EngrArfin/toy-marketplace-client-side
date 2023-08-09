@@ -16,8 +16,10 @@ import Orders from './components/Orders/Orders.jsx';
 import PrivateRoute from './routes/PrivateRoute.jsx';
 import Profile from './components/Profile/Profile.jsx';
 import CheckOut from './components/CheckOut/CheckOut';
+import Blog from './components/Blog/Blog';
 import Services from './components/Services/Services';
 import ServiceCard from './components/Services/ServiceCard';
+import ToyService from './components/ToyService/ToyService';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,13 +53,25 @@ const router = createBrowserRouter([
         path: '/orders',
         element: <PrivateRoute><Orders></Orders></PrivateRoute>
       },
-      {
-        path: 'checkout/:id',
-        element: <CheckOut></CheckOut>
-      },
+      
       {
         path: '/produc',
         element: <ServiceCard></ServiceCard>
+      },
+      {
+        path: '/blog',
+        element: <Blog></Blog>
+      },
+      {
+        path: 'toy/:id',
+        element: <ToyService></ToyService>,
+        loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+
+      },
+      {
+        path: 'checkout/:id',
+        element: <CheckOut></CheckOut>,
+        loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
       }
       
     ]

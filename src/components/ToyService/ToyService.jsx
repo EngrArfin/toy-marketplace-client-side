@@ -1,33 +1,58 @@
-//import { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProviders";
 
-const CheckOut = () => {
+const ToyService = () => {
   const service = useLoaderData();
-  const { title, _id } = service;
+  const { title, _id, price, img } = service;
+  const { user } = useContext(AuthContext);
+
+  const handleToyService = (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const name = form.name.value;
+    const date = form.date.value;
+    const email = user?.email.value;
+    const toying = {
+      customerName: name,
+      email,
+      img,
+      date,
+      service: title,
+      service_id: _id,
+      price: price,
+    };
+    console.log(toying);
+
+    fetch("http://localhost:5000/toying", {
+      method: "POST",
+      headers: {
+        'content-type': 'application/json'
+      },
+    })
+      .then((res) => res.json())
+      .then((date) => {
+        console.log(date);
+      });
+  };
 
   return (
     <div>
-      <h2>Check Out</h2>
-      <p>Product: {title}</p>
-      <form>
+      <br /> <br />
+      <h2 className="text-center text-3xl">Toy Product:{title}</h2>
+      <br /> <br />
+      <form onSubmit={handleToyService} className="m-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Email</span>
+              <span className="label-text">Name</span>
             </label>
             <input
               type="text"
-              placeholder="email"
-              className="input input-bordered"
-            />
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Password</span>
-            </label>
-            <input
-              type="text"
-              placeholder="password"
+              defaultValue={user?.displayName}
+              name="name"
+              placeholder="name"
               className="input input-bordered"
             />
           </div>
@@ -37,22 +62,34 @@ const CheckOut = () => {
             </label>
             <input
               type="text"
-              placeholder="email"
+              name="email"
+              defaultValue={user?.email}
+              placeholder="Email"
               className="input input-bordered"
             />
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Password</span>
+              <span className="label-text">Today Date</span>
+            </label>
+            <input
+              type="date"
+              name="date"
+              placeholder="date"
+              className="input input-bordered"
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Price</span>
             </label>
             <input
               type="text"
-              placeholder="password"
+              defaultValue={price}
               className="input input-bordered"
             />
           </div>
         </div>
-
 
         <div className="form-control mt-6">
           <input
@@ -62,10 +99,9 @@ const CheckOut = () => {
           />
         </div>
       </form>
-
       <div>
         {/* Footer */}
-
+        <br /> <br /> <br />
         <footer className="footer p-10 bg-base-300 text-base-content">
           <div>
             <span className="text-primary footer-title">Services</span>
@@ -122,7 +158,9 @@ const CheckOut = () => {
         </footer>
       </div>
     </div>
+
+    
   );
 };
 
-export default CheckOut;
+export default ToyService;

@@ -1,14 +1,11 @@
-
-//import { data } from 'autoprefixer';
 import { useEffect, useState } from 'react';
 import ServiceCard from './ServiceCard';
-
 
 const Services = () => {
     const [services, serServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services') //http://localhost:5000/services
+        fetch('http://localhost:5000/services') 
         .then(res => res.json())
         .then(data => serServices(data));
 
@@ -29,7 +26,6 @@ const Services = () => {
                     ></ServiceCard>)
                 }  
             </div>
-            
         </div>
     );
 };

@@ -1,20 +1,53 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-const Orders = () => {
+const Orders = (service) => {
+ 
+  const { _id, title, img, price } = service;
+
   return (
     <div>
-     
-     {/*  head */}
-     <div className="card lg:card-side bg-base-100 shadow-xl">
-  <figure><img src="/public/img/d-3.jpg" alt="Album"/></figure>
-  <div className="card-body">
-    <h1 className="card-title">New Product released!</h1>
-    <p>Click the button to buy discount product .</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Discount Product</button>
-    </div>
-  </div>
-</div>
+      <div className="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img src={img} alt="Album" />
+        </figure>
+        <div className="card-body">
+          <h1 className="card-title">{title}</h1>
+          <Link to={`/toy/${_id}`}>
+            <button className="badge badge-outline">Product Details </button>
+            <div className="card-actions justify-end">
+              <div className="btn btn-danger">Buy Here</div>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+
+      <div className=" card card-side bg-base-100 shadow-xl  w-50 h-40 m-2 p-0">
+        <figure>
+          <img src={img} />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">{title}</h2>
+          <p>Click {price}</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">Buy here</button>
+          </div>
+        </div>
+      </div>
+
+      {/*  head */}
+      <div className="card lg:card-side bg-base-100 shadow-xl">
+        <figure>
+          <img src={img} alt="Album" />
+        </figure>
+        <div className="card-body">
+          <h1 className="card-title">New Product released!</h1>
+          <p>Click the button to buy discount product .</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">Discount Product</button>
+          </div>
+        </div>
+      </div>
 
       <div className="flex">
         <div>
@@ -30,6 +63,7 @@ const Orders = () => {
               </div>
             </div>
           </div>
+
           <div className=" card card-side bg-base-100 shadow-xl  w-50 h-40 m-2 p-0 ">
             <figure>
               <img src="/public/img/d-1.jpg" />

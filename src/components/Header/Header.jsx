@@ -25,15 +25,14 @@ const Header = () => {
           <Link className="btn btn-danger normal-case text-xl m-2" to="/orders">
             Kid product 
           </Link>
-          <Link className="btn btn-danger normal-case text-xl m-2" to="checkout/:id">
-            Check Out
+          <Link className="btn btn-danger normal-case text-xl m-2" to="toy/:id">
+            Toy Product
           </Link>
-          <Link className="btn btn-danger normal-case text-xl m-2" to="/produc">
-            Contract
-          </Link>
-          
           <Link className="btn btn-danger normal-case text-xl m-2" to="/contract">
             Contract
+          </Link>
+          <Link className="btn btn-danger normal-case text-xl m-2" to="/blog">
+            Blog
           </Link>
           <Link className=" btn btn-danger normal-case text-xl m-2" to="/login">
             Login
