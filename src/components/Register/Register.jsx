@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
 import { Result } from 'postcss';
+import SocialLogin from '../Share/SocialLogin/SocialLogin';
 
 const Register = () => {
 
@@ -63,6 +64,7 @@ const Register = () => {
                                 <button className="btn btn-primary">Register</button>
 
                             </div>
+                            <SocialLogin></SocialLogin>
                         </form>
                         
                     </div>

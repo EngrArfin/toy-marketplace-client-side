@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 
@@ -30,10 +30,12 @@ const ToyService = () => {
       headers: {
         'content-type': 'application/json'
       },
+      body: JSON.stringify(toying)
     })
-      .then((res) => res.json())
-      .then((date) => {
+      .then(res => res.json())
+      .then(date => {
         console.log(date);
+        
       });
   };
 

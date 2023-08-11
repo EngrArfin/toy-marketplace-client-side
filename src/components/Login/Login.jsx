@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
+import SocialLogin from "../Share/SocialLogin/SocialLogin";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -39,7 +40,10 @@ const Login = () => {
                   <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="email" name="email" placeholder="Email"  className="input input-bordered"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  className="input input-bordered"
                   required
                 />
               </div>
@@ -47,7 +51,11 @@ const Login = () => {
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input type="password" name="password" placeholder="Password" className="input input-bordered"
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  className="input input-bordered"
                   required
                 />
                 <label className="label">
@@ -61,10 +69,12 @@ const Login = () => {
               </div>
             </form>
             <p className="mb-4 ml-8">
+            I have no Account?
               <Link to="/register" className="level-text-alt link-hover">
-                I have no Account?  Register here
+                 Register here 
               </Link>
             </p>
+            <SocialLogin></SocialLogin>
           </div>
         </div>
       </div>
