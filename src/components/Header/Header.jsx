@@ -42,7 +42,7 @@ const Header = () => {
             <>
               <Link
                 className="btn btn-danger normal-case text-xl m-2"
-                to="/booking"
+                to="/entry"
               >
                 My Booking
               </Link>

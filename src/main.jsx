@@ -18,6 +18,7 @@ import Profile from './components/Profile/Profile.jsx';
 import Blog from './components/Blog/Blog';
 import ServiceCard from './components/Services/ServiceCard';
 import ToyService from './components/ToyService/ToyService';
+import ToyEntry from './components/ToyEntry/ToyEntry';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
         path: 'toy/:id',
         element: <ToyService></ToyService>,
         loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+
+      },
+      {
+        path: 'entry',
+        element: <ToyEntry></ToyEntry>
 
       }
       

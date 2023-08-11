@@ -13,6 +13,7 @@ const ToyService = () => {
     const form = event.target;
     const name = form.name.value;
     const date = form.date.value;
+  
     const email = user?.email.value;
     const toying = {
       customerName: name,
@@ -21,23 +22,25 @@ const ToyService = () => {
       date,
       service: title,
       service_id: _id,
-      price: price,
+      price: price
     };
     console.log(toying);
 
     fetch("http://localhost:5000/toying", {
       method: "POST",
       headers: {
-        'content-type': 'application/json'
+        "content-type": "application/json",
       },
-      body: JSON.stringify(toying)
+      body: JSON.stringify(toying),
     })
-      .then(res => res.json())
-      .then(date => {
-        console.log(date);
-        
-      });
-  };
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          alert("service book successfully");
+        }
+      })
+  }
 
   return (
     <div>
@@ -83,11 +86,11 @@ const ToyService = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Price</span>
+              <span className="label-text">Due amount</span>
             </label>
             <input
               type="text"
-              defaultValue={price}
+              defaultValue={"$" + price}
               className="input input-bordered"
             />
           </div>
@@ -160,8 +163,6 @@ const ToyService = () => {
         </footer>
       </div>
     </div>
-
-    
   );
 };
 
