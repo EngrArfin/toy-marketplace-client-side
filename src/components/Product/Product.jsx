@@ -1,108 +1,101 @@
-
 const Product = () => {
-
-  
-    return (
-        <div>
-            
-            <div className="disply:center">
-          <div className="bg-center flex p-4 m-3">
-            <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
-              <figure>
-                <img src="/public/img/1.png" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Burger</h2>
-                <p>Barger</p>
-                <p>Delivery Charge: 60 Tk</p>
-                <p>Quality : Good</p>
-                <li>Likes</li>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">View Food</button>
-                </div>
-              </div>
-            </div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
-              <figure>
-                <img src="/public/img/4.png" alt="Shoes" />
-              </figure>
-              <div className="card-body">
+  return (
+    <div>
+      <div className="disply:center">
+        <div className="bg-center flex p-4 m-3">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
+            <figure>
+              <img src="/public/img/1.png" alt="Shoes" />
+            </figure>
+            <div className="card-body">
               <h2 className="card-title">Burger</h2>
-                <p>Delivery Charge: 60 Tk</p>
-                <p>Quality : Good</p>
-                <li>Likes</li>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">View Food</button>
-                </div>
-              </div>
-            </div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
-              <figure>
-                <img src="/public/img/2.png" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-              <h2 className="card-title">Burger</h2>
-                <p>Delivery Charge: 60 Tk</p>
-                <p>Quality : Good</p>
-                <li>Likes</li>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">View Food</button>
-                </div>
+              <p>Barger</p>
+              <p>Delivery Charge: 60 Tk</p>
+              <p>Quality : Good</p>
+              <li>Likes</li>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">View Food</button>
               </div>
             </div>
           </div>
-
-          <div className="flex p-4 m-3">
-            <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
-              <figure>
-                <img src="/public/img/3.png" alt="Shoes" />
-              </figure>
-              <div className="card-body">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
+            <figure>
+              <img src="/public/img/4.png" alt="Shoes" />
+            </figure>
+            <div className="card-body">
               <h2 className="card-title">Burger</h2>
-                <p>Delivery Charge: 60 Tk</p>
-                <p>Quality : Good</p>
-                <li>Likes</li>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">View Food</button>
-                </div>
+              <p>Delivery Charge: 60 Tk</p>
+              <p>Quality : Good</p>
+              <li>Likes</li>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">View Food</button>
               </div>
             </div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
-              <figure>
-                <img src="/public/img/4.png" alt="Shoes" />
-              </figure>
-              <div className="card-body">
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
+            <figure>
+              <img src="/public/img/2.png" alt="Shoes" />
+            </figure>
+            <div className="card-body">
               <h2 className="card-title">Burger</h2>
-                <p>Delivery Charge: 60 Tk</p>
-                <p>Quality : Good</p>
-                <li>Likes</li>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">View Food</button>
-                </div>
-              </div>
-            </div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
-              <figure>
-                <img src="/public/img/5.png" alt="Shoes" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Burger</h2>
-                <p>Delivery Charge: 60 Tk</p>
-                <p>Quality : Good</p>
-                <li>Likes</li>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">View Food</button>
-                </div>
+              <p>Delivery Charge: 60 Tk</p>
+              <p>Quality : Good</p>
+              <li>Likes</li>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">View Food</button>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="flex p-4 m-3">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
+            <figure>
+              <img src="/public/img/3.png" alt="Shoes" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Burger</h2>
+              <p>Delivery Charge: 60 Tk</p>
+              <p>Quality : Good</p>
+              <li>Likes</li>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">View Food</button>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
+            <figure>
+              <img src="/public/img/4.png" alt="Shoes" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Burger</h2>
+              <p>Delivery Charge: 60 Tk</p>
+              <p>Quality : Good</p>
+              <li>Likes</li>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">View Food</button>
+              </div>
+            </div>
+          </div>
+          <div className="card card-compact w-96 bg-base-100 shadow-xl p-3 m-3">
+            <figure>
+              <img src="/public/img/5.png" alt="Shoes" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Burger</h2>
+              <p>Delivery Charge: 60 Tk</p>
+              <p>Quality : Good</p>
+              <li>Likes</li>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">View Food</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
         <div>
-        <div>
-
-
-
-           {/*  Footer */}
+          {/*  Footer */}
           <footer className="footer p-10 bg-base-300 text-base-content">
             <div>
               <span className="text-primary footer-title">Services</span>
@@ -158,9 +151,9 @@ const Product = () => {
             </div>
           </footer>
         </div>
-        </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Product;

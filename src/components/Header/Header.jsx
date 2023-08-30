@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import img from "../../../public/img/d-10.jpg";
+import KidToy from '../../assets/KidToy.jpg';
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -13,13 +14,14 @@ const Header = () => {
 
   return (
     <div className="flex">
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-red-200">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl m-2">Kid Dol Toy</a>
+        <img src={KidToy} alt="" className="w-10 rounded-full" />
+          <a className="btn btn-ghost text-red-600 text-xl m-2 uppercase">Kid Toy</a>
         </div>
 
         <div>
-          <Link className="btn btn-danger normal-case text-xl m-2" to="/home">
+          <Link className="btn btn-danger normal-case text-xl m-2" to="/">
             Home
           </Link>
 
