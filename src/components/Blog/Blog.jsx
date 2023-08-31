@@ -1,10 +1,14 @@
+import Footer from "../Share/Footer/Footer";
+
 const Blog = () => {
   return (
     <div>
-      <h2 className="bg-red-700">
+      <div>
+      <h1 className="bg-red-500 uppercase p-4">
         what is access token and refresh token ? how do they work and where
         should we store them on the client-side
-      </h2>
+      </h1>
+      <div className="p-4">
       The access token allows for access to different APIs and protected
       resources. The refresh token lets you mint new access tokens.
       <p>
@@ -25,7 +29,8 @@ const Blog = () => {
       </p>
       <br />
       <br />
-      <h2 className="bg-red-700">Compare sql and nosql databases?</h2>
+      </div>
+      <h2 className="bg-red-500 uppercase p-4">Compare sql and nosql databases?</h2>
       <p>
         NoSQL and SQL databases have many similarities. In addition to
         supporting data storage and queries, they both also allow one to
@@ -37,13 +42,13 @@ const Blog = () => {
         multi-row transactions, while NoSQL is better for unstructured data like
         documents or JSON
       </p>
-      <h2 className="bg-red-700">what is express js ? what is nest js ?</h2>
+      <h2 className="bg-red-500 uppercase p-4">what is express js ? what is nest js ?</h2>
       <p>
         Express is a minimal and flexible Node.js web application framework that
         provides a robust set of features for web and mobile applications
       </p>{" "}
       <br />
-      <h3>what is nest js:</h3>
+      <h3 className="bg-red-500 uppercase p-4">what is nest js:</h3>
       <p>
         NestJS is a popular open-source, back-end framework for Node. js and
         TypeScript-based, server-side applications. It is intended to provide a
@@ -56,7 +61,7 @@ const Blog = () => {
         efficient, scalable, and enterprise-grade backend applications using
         Node. js.{" "}
       </p>
-      <h2 className="bg-red-700">
+      <h2 className="bg-red-500 uppercase p-4">
         what is mongodb aggregate and how does it work ?
       </h2>
       <p>
@@ -66,7 +71,11 @@ const Blog = () => {
         filter, sort, group, reshape and modify documents that pass through the
         pipeline.
       </p>
+      
     </div>
+    </div>
+    
+    
   );
 };
 

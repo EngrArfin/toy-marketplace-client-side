@@ -5,11 +5,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Main from './components/Main/Main.jsx';
+//import Main from './components/Main/Main.jsx';
 import Home from './components/Home/Home.jsx';
 import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
-import Product from './components/Product/Product.jsx';
+//import Product from './components/Product/Product.jsx';
 import Contract from './components/Contract/Contract.jsx';
 import AuthProviders from './Providers/AuthProviders.jsx';
 import Orders from './components/Orders/Orders.jsx';
@@ -19,6 +19,9 @@ import Blog from './components/Blog/Blog';
 import ServiceCard from './components/Services/ServiceCard';
 import ToyService from './components/ToyService/ToyService';
 import ToyEntry from './components/ToyEntry/ToyEntry';
+//import AllToy from './components/AllToy/AllToy';
+import Main from './layout/Main';
+import AllToyList from './components/AllToyList/AllToyList';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,14 +35,16 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Login></Login>,
       },
+      
+      {
+        path: '/alltoyList',
+        element: <AllToyList></AllToyList>,
+      },
       {
         path: '/register',
         element: <Register></Register>,
       },
-      {
-        path: '/product',
-        element: <Product></Product>,
-      },
+      
       {
         path: '/contract',
         element: <Contract></Contract>
@@ -68,7 +73,7 @@ const router = createBrowserRouter([
 
       },
       {
-        path: 'entry',
+        path: '/entry',
         element: <ToyEntry></ToyEntry>
 
       }

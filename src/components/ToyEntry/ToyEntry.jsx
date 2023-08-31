@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProviders";
 import EntryRow from "./EntryRow";
+import Footer from "../Share/Footer/Footer";
 
 const ToyEntry = () => {
   const { user } = useContext(AuthContext);
@@ -14,13 +15,13 @@ const ToyEntry = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Entry: {toying.length}</h2>
-
-      <div className="overflow-x-auto items-center p-29 bg-center">
-        <table className="table">
+    <section>
+      <div className="flex p-6">
+      
+      <div><div className="overflow-x-auto items-center  bg-center w-200">
+        <table className="table ">
           {/* head */}
-          <thead>
+          <thead className="text-red-600">
             <tr>
               <th>
                 <label>
@@ -42,8 +43,38 @@ const ToyEntry = () => {
             ))}
           </tbody>
         </table>
-      </div>
+      </div></div>
+      <div className="ml-20"><div className="overflow-x-auto items-center  bg-center w-200">
+        <table className="table ">
+          {/* head */}
+          <thead className="text-red-600">
+            <tr>
+              <th>
+                <label>
+                  <input type="checkbox" className="checkbox" />
+                </label>
+              </th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Price</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {toying.map((entry => <EntryRow 
+              key={entry._id} 
+              entry={entry}
+              ></EntryRow>
+            ))}
+          </tbody>
+        </table>
+      </div></div>
     </div>
+    <Footer></Footer>
+    
+    </section>
+    
   );
 };
 

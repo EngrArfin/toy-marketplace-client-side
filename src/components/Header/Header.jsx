@@ -14,61 +14,68 @@ const Header = () => {
 
   return (
     <div className="flex">
-      <div className="navbar bg-red-200">
+      <div className="navbar bg-blue-300">
         <div className="flex-1">
         <img src={KidToy} alt="" className="w-10 rounded-full" />
-          <a className="btn btn-ghost text-red-600 text-xl m-2 uppercase">Kid Toy</a>
+          <a className="btn btn-ghost text-red-800 text-xl m-2 uppercase">Kid Toy</a>
         </div>
 
         <div>
-          <Link className="btn btn-danger normal-case text-xl m-2" to="/">
+          <Link className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2" to="/">
             Home
           </Link>
 
-          <Link className="btn btn-danger normal-case text-xl m-2" to="/orders">
-            Kid product
+          {/* <Link className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2" to="/alltoy">
+            All Toy
+          </Link> */}
+          <Link className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2" to="/alltoyList">
+           All Toy List
           </Link>
-          <Link className="btn btn-danger normal-case text-xl m-2" to="toy/:id">
-            Toy Product
+          <Link className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2" to="/orders">
+            Discount product
           </Link>
-          <Link
-            className="btn btn-danger normal-case text-xl m-2"
-            to="/contract"
-          >
-            Contract
-          </Link>
-          <Link className="btn btn-danger normal-case text-xl m-2" to="/blog">
-            Blog
+          <Link className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2" to="toy/:id">
+            Sell Poduct
           </Link>
           {user?.email ? (
             <>
               <Link
-                className="btn btn-danger normal-case text-xl m-2"
+                className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
                 to="/entry"
               >
-                My Booking
+                 Buyed Product
               </Link>
               
             </>
           ) : (
             <Link
-              className="btn btn-danger normal-case text-xl m-2"
+              className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
               to={"/login"}
             >
               Login
             </Link>
           )}
           <Link
-            className="btn btn-danger normal-case text-xl m-2"
+            className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
+            to="/contract"
+          >
+            Contract
+          </Link>
+          <Link className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2" to="/blog">
+            Blog
+          </Link>
+          
+          <Link
+            className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
             to="/register"
           >
             Register
           </Link>
         </div>
 
-        <div className="flex-none">
+        <div className="flex-none ">
           <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost btn-circle">
+            <label tabIndex={0} className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2 btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +91,7 @@ const Header = () => {
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                <span className="badge badge-sm indicator-item">1</span>
+                <span className="border-yellow-200 badge-sm indicator-item">1</span>
               </div>
             </label>
             <div
@@ -105,16 +112,16 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-sky-600 rounded-box w-52"
             >
-              <a className="btn btn-danger normal-case text-xl m-2">Profile</a>
-              <a className="btn btn-danger normal-case text-xl m-2">Settings/Privacy</a>
-              <a className="btn btn-danger normal-case text-xl m-2">Help & Support</a>
-              <a className="btn btn-danger normal-case text-xl m-2">FeedBack</a>
+              <a className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2">Profile</a>
+              <a className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2">Settings/Privacy</a>
+              <a className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2">Help & Support</a>
+              <a className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2">FeedBack</a>
               {user?.email ? (
                 <>
                   <button
-                    className="btn btn-danger normal-case text-xl m-2"
+                    className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
                     onClick={handleLogOut}
                   >
                     Logout
@@ -122,7 +129,7 @@ const Header = () => {
                 </>
               ) : (
                 <Link
-                  className="btn btn-danger normal-case text-xl m-2"
+                  className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
                   to={"/login"}
                 >
                   Login

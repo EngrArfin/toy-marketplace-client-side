@@ -25,7 +25,7 @@ const EntryRow = ({entry}) => {
       <td>{price}</td>
       <td>{date}</td>
       <th>
-        <button className="btn btn-ghost btn-xs">details</button>
+        <button className="btn btn-outline bg-sky-400 border-0 border-b-4 mt-4">details</button>
       </th>
     </tr>
   );
