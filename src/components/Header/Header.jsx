@@ -61,7 +61,18 @@ const Header = () => {
             </Link>
           )}
 
-
+          <Link
+            className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
+            to="/contract"
+          >
+            Contract
+          </Link>
+          <Link
+            className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
+            to="/blog"
+          >
+            Blog
+          </Link>
 
           {user?.email ? (
             <>
@@ -80,19 +91,6 @@ const Header = () => {
               Login
             </Link>
           )}
-
-          <Link
-            className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
-            to="/contract"
-          >
-            Contract
-          </Link>
-          <Link
-            className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
-            to="/blog"
-          >
-            Blog
-          </Link>
 
           <Link
             className="btn btn-outline border-yellow-200 border-2 border-b-6 mt-4 m-2"
