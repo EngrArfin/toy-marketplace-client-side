@@ -26,8 +26,8 @@ const Home = () => {
                 Toy marketing relies on influencers and recommendations from
                 other kids. and encourage customers to share their experiences.
               </p>
-              <button className="btn btn-outline border-red-500 border-2 border-b-6 mt-4"> {/* btn btn-outline border-0 border-b-4 mt-4 */}
-                <a href="/product"></a> Go For Buy
+              <button  className="btn btn-outline border-red-500 border-2 border-b-6 mt-4"> 
+                <a to="/entry">Go For Buy</a> 
               </button>
             </div>
           </div>
