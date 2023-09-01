@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import KidToy from "../../../assets/KidToy.jpg";
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -19,14 +20,14 @@ const Footer = () => {
             <span className="footer-title text-blue-800 uppercase">
               Our Service
             </span>
-            <a className="link link-hover">Kid Toy Market</a>
-            <a className="link link-hover">Contact</a>
+            <Link className="link link-hover" to="/orders">Kid Toy Market</Link>
+            <Link className="link link-hover" to="/alltoyList">All Toy</Link>
             <a className="link link-hover">Kit Toy </a>
             <a className="link link-hover">Press kit</a>
           </div>
           <div>
-            <span className="footer-title">Contract</span>
-            <a className="link link-hover">arfin.cse.green.edu.bd@gmail.com</a>
+            <span className="footer-title" to>Contract</span>
+            <a href="" className="link link-hover">arfin.cse.green.edu.bd@gmail.com</a>
             <a className="link link-hover">Phone: +880 192475639</a>
             <div className="grid grid-flow-col gap-4">
               <a href="https://twitter.com/ArfinSamsel">

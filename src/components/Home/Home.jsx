@@ -1,13 +1,11 @@
-import { useContext, Link } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProviders";
 import Services from "../Services/Services";
-//import KidToy from "../../assets/KidToy.jpg";
 import Home2 from "../../assets/Home2.jpg";
 import Title from "../Share/Title/Title";
 import Footer from "../Share/Footer/Footer";
 import ProductGallery from "../Share/ProductGallery/ProductGallery";
 import Partner from "../Share/Partner/Partner";
-//import Product from "../Product/Product";
 
 const Home = () => {
   const user = useContext(AuthContext);
@@ -23,7 +21,7 @@ const Home = () => {
             <div className="max-w-md">
               <h1 className="text-5xl font-bold uppercase">Beby Toy</h1>
               <p className="py-6">
-                Toy marketing relies on influencers and recommendations from
+                Toy marketing relies on  and recommendations from
                 other kids. and encourage customers to share their experiences.
               </p>
               <button  className="btn btn-outline border-red-500 border-2 border-b-6 mt-4"> 
