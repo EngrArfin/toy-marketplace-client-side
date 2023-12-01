@@ -12,6 +12,7 @@ const AllToyEntry = ({toys}) => {
           </label>
         </th>
         <td>
+          {/* Arfin */}
           <div className="avatar">
             <div className="rounded w-24 h-24">
               <img src={img} alt="Avatar Tailwind CSS Component" />
